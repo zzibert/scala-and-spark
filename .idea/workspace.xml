@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82465698-8dfe-4f20-b483-66905f513ada" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/playground/ScalaPlayground.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/playground/javaPlayground.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rock-the-jvm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playground/ScalaPlayground.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/playground/javaPlayground.java" afterDir="false" />
-    </list>
+    <list default="true" id="82465698-8dfe-4f20-b483-66905f513ada" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
