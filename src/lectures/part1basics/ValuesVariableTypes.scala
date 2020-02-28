@@ -19,7 +19,7 @@ object ValuesVariableTypes extends App {
 
   val aLong: Long = 44444444444444L
 
-  val aFloat: Float = 434.0
+
 
   // variable
 

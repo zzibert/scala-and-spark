@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82465698-8dfe-4f20-b483-66905f513ada" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lectures/part1basics/ValuesVariableTypes.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/part1basics/Expressions.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part1basics/ValuesVariableTypes$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part1basics/ValuesVariableTypes$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part1basics/ValuesVariableTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part1basics/ValuesVariableTypes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/ValuesVariableTypes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1basics/ValuesVariableTypes.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +39,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ValuesVariableTypes">
+  <component name="RunManager" selected="Application.Expressions">
+    <configuration name="Expressions" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.Expressions" />
+      <module name="rock-the-jvm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part1basics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ScalaPlayground" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="playground.ScalaPlayground" />
       <module name="rock-the-jvm" />
@@ -78,6 +94,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Expressions" />
         <item itemvalue="Application.ValuesVariableTypes" />
         <item itemvalue="Application.ScalaPlayground" />
         <item itemvalue="Application.javaPlayground" />
@@ -98,25 +115,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1286" height="106" key="GridCell.Tab.0.bottom" timestamp="1582824474900">
+    <state width="1286" height="172" key="GridCell.Tab.0.bottom" timestamp="1582921292372">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="106" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582824474900" />
-    <state width="1286" height="106" key="GridCell.Tab.0.center" timestamp="1582824474900">
+    <state width="1286" height="172" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582921292372" />
+    <state width="1286" height="172" key="GridCell.Tab.0.center" timestamp="1582921292372">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="106" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582824474900" />
-    <state width="1286" height="106" key="GridCell.Tab.0.left" timestamp="1582824474899">
+    <state width="1286" height="172" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582921292372" />
+    <state width="1286" height="172" key="GridCell.Tab.0.left" timestamp="1582921292371">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="106" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582824474899" />
-    <state width="1286" height="106" key="GridCell.Tab.0.right" timestamp="1582824474900">
+    <state width="1286" height="172" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582921292371" />
+    <state width="1286" height="172" key="GridCell.Tab.0.right" timestamp="1582921292372">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="106" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582824474900" />
-    <state x="384" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582821437313">
+    <state width="1286" height="172" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582921292372" />
+    <state x="384" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1582920253950">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582821437313" />
+    <state x="384" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1582920253950" />
   </component>
 </project>
