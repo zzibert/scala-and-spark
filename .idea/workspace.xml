@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82465698-8dfe-4f20-b483-66905f513ada" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/Notations.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/OOBasics$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/OOBasics$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/OOBasics.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/OOBasics.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/OOBasics.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2oop/OOBasics.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.OOBasics">
+  <component name="RunManager" selected="Application.Notations">
     <configuration name="CNN" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part1basics.CNN" />
       <module name="rock-the-jvm" />
@@ -66,8 +63,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OOBasics" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.OOBasics" />
+    <configuration name="Notations" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.Notations" />
       <module name="rock-the-jvm" />
       <extension name="coverage">
         <pattern>
@@ -79,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recursion" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.Recursion" />
+    <configuration name="OOBasics" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.OOBasics" />
       <module name="rock-the-jvm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.part1basics.*" />
+          <option name="PATTERN" value="lectures.part2oop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Notations" />
         <item itemvalue="Application.OOBasics" />
         <item itemvalue="Application.StringOps" />
         <item itemvalue="Application.DefaultArgs" />
         <item itemvalue="Application.CNN" />
-        <item itemvalue="Application.Recursion" />
       </list>
     </recent_temporary>
   </component>
@@ -129,22 +126,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1322" height="231" key="GridCell.Tab.0.bottom" timestamp="1583078981178">
+    <state width="1322" height="110" key="GridCell.Tab.0.bottom" timestamp="1583083068374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583078981178" />
-    <state width="1322" height="231" key="GridCell.Tab.0.center" timestamp="1583078981177">
+    <state width="1322" height="110" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583083068374" />
+    <state width="1322" height="110" key="GridCell.Tab.0.center" timestamp="1583083068374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583078981177" />
-    <state width="1322" height="231" key="GridCell.Tab.0.left" timestamp="1583078981177">
+    <state width="1322" height="110" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583083068374" />
+    <state width="1322" height="110" key="GridCell.Tab.0.left" timestamp="1583083068374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583078981177" />
-    <state width="1322" height="231" key="GridCell.Tab.0.right" timestamp="1583078981177">
+    <state width="1322" height="110" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583083068374" />
+    <state width="1322" height="110" key="GridCell.Tab.0.right" timestamp="1583083068374">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="231" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583078981177" />
+    <state width="1322" height="110" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583083068374" />
     <state x="384" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1583068512995">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
