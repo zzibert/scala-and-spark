@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82465698-8dfe-4f20-b483-66905f513ada" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/AnonymousClasses$$anon$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/AnonymousClasses$$anon$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/AnonymousClasses$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/AnonymousClasses$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/AnonymousClasses$Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/AnonymousClasses$Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/AnonymousClasses.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/rock-the-jvm/lectures/part2oop/AnonymousClasses.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/MyList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyList.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.AnonymousClasses">
+  <component name="RunManager" selected="Application.Exercises">
     <configuration name="AbstractDataTypes" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part2oop.AbstractDataTypes" />
       <module name="rock-the-jvm" />
@@ -104,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AnonymousClasses" />
         <item itemvalue="Application.Exercises" />
+        <item itemvalue="Application.AnonymousClasses" />
         <item itemvalue="Application.AbstractDataTypes" />
         <item itemvalue="Application.Inheritance" />
         <item itemvalue="Application.Objects" />
@@ -130,26 +135,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583184698219" />
-    <state width="1322" height="178" key="GridCell.Tab.0.bottom" timestamp="1583583651521">
+    <state width="1322" height="228" key="GridCell.Tab.0.bottom" timestamp="1583682924364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="178" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583583651521" />
-    <state width="1322" height="178" key="GridCell.Tab.0.center" timestamp="1583583651521">
+    <state width="1322" height="228" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583682924364" />
+    <state width="1322" height="228" key="GridCell.Tab.0.center" timestamp="1583682924364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="178" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583583651521" />
-    <state width="1322" height="178" key="GridCell.Tab.0.left" timestamp="1583583651520">
+    <state width="1322" height="228" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583682924364" />
+    <state width="1322" height="228" key="GridCell.Tab.0.left" timestamp="1583682924364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="178" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583583651520" />
-    <state width="1322" height="178" key="GridCell.Tab.0.right" timestamp="1583583651521">
+    <state width="1322" height="228" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583682924364" />
+    <state width="1322" height="228" key="GridCell.Tab.0.right" timestamp="1583682924364">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="178" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583583651521" />
-    <state x="384" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1583576476961">
+    <state width="1322" height="228" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583682924364" />
+    <state x="384" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1583676084514">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="384" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583576476961" />
+    <state x="384" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583676084514" />
     <state x="300" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583582365064">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
