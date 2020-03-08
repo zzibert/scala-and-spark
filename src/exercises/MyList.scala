@@ -37,7 +37,7 @@ abstract class MyList[+A] {
   override def toString: String = "[" + printElements + "]"
 }
 
-class Cons[+A](h: A, t: MyList[A]) extends MyList[A]  {
+case class Cons[+A](h: A, t: MyList[A]) extends MyList[A]  {
   def head(): A = h
   def tail: MyList[A] = t
   def isEmpty(): Boolean = false
@@ -59,7 +59,7 @@ class Cons[+A](h: A, t: MyList[A]) extends MyList[A]  {
   }
 }
 
-object Empty extends MyList[Nothing] {
+case object Empty extends MyList[Nothing] {
   def head: Nothing = throw new NoSuchElementException
   def tail: Nothing = throw new NoSuchElementException
   def isEmpty: Boolean = true
