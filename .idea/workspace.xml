@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="82465698-8dfe-4f20-b483-66905f513ada" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lectures/part2oop/CaseClasses.scala" afterDir="false" />
+    <list default="true" id="90920be2-05ac-47d5-8d50-f1edc6c7c7cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scala-and-spark.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/playgroud/javaPlayground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/MyList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyList.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/MyList.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/CNN.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/DefaultArgs.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/Expressions.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/Functions.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/Recursion.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/StringOps.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/ValuesVariableTypes.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/AbstractDataTypes.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/AnonymousClasses.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/CaseClasses.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/Generics.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/Inheritance.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/Notations.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/OOBasics.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/Objects.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/playground/ScalaPlayground.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/playground/javaPlayground.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +59,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -28,133 +68,41 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1YOlGfUqjCRmKtun8iuPE5HV6Y1" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1h8qigyJFc5hEvnnswIiTXZBdrE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Application.CaseClasses">
-    <configuration name="AbstractDataTypes" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.AbstractDataTypes" />
-      <module name="rock-the-jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnonymousClasses" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.AnonymousClasses" />
-      <module name="rock-the-jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CaseClasses" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.CaseClasses" />
-      <module name="rock-the-jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Exercises" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.Exercises" />
-      <module name="rock-the-jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercises.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Inheritance" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.Inheritance" />
-      <module name="rock-the-jvm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.CaseClasses" />
-        <item itemvalue="Application.Exercises" />
-        <item itemvalue="Application.AnonymousClasses" />
-        <item itemvalue="Application.AbstractDataTypes" />
-        <item itemvalue="Application.Inheritance" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="82465698-8dfe-4f20-b483-66905f513ada" name="Default Changelist" comment="" />
-      <created>1582821427707</created>
+      <changelist id="90920be2-05ac-47d5-8d50-f1edc6c7c7cd" name="Default Changelist" comment="" />
+      <created>1599403196292</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582821427707</updated>
+      <updated>1599403196292</updated>
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser" timestamp="1583184698219">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="444" y="118" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599403748158">
+      <screen x="0" y="23" width="1440" height="798" />
     </state>
-    <state x="488" y="72" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1583184698219" />
-    <state width="1306" height="227" key="GridCell.Tab.0.bottom" timestamp="1583685532490">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1306" height="227" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1583685532490" />
-    <state width="1306" height="227" key="GridCell.Tab.0.center" timestamp="1583685532489">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1306" height="227" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1583685532489" />
-    <state width="1306" height="227" key="GridCell.Tab.0.left" timestamp="1583685532489">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1306" height="227" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1583685532489" />
-    <state width="1306" height="227" key="GridCell.Tab.0.right" timestamp="1583685532489">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1306" height="227" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1583685532489" />
-    <state x="384" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1583685158454">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="384" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583685158454" />
-    <state x="300" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1583582365064">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="300" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1583582365064" />
+    <state x="444" y="118" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599403748158" />
   </component>
 </project>
