@@ -2,51 +2,45 @@ package exercises
 
 object Exercise extends App {
 
-  var list = Empty.add(1)
+  val listOfIntegers: MyList[Int] = new Cons(1, new Cons(2, Empty))
+  val listOfStrings: MyList[String] = new Cons("Hello", new Cons("Scala", Empty))
 
-  list = list.add(2)
-
-  list = list.add(3)
-
-  list = list.add(4)
-
-  list = list.add(5)
-
-  println(list)
+  println(listOfIntegers)
+  println(listOfStrings)
 }
 
-abstract class MyList {
+abstract class MyList[+A] {
 
-  def head: Int
-  def tail: MyList
+  def head: A
+  def tail: MyList[A]
   def isEmpty: Boolean
-  def add(element: Int): MyList
+  def add[B >: A](element: B): MyList[B]
   def printElements: String
   override def toString: String = "[" + printElements + "]"
 
 }
 
-object Empty extends MyList {
+object Empty extends MyList[Nothing] {
 
-  def head: Int = throw new NoSuchElementException
+  def head: Nothing = throw new NoSuchElementException
 
-  def tail: MyList = throw new NoSuchElementException
+  def tail: MyList[Nothing] = throw new NoSuchElementException
 
   def isEmpty: Boolean = true
 
-  def add(element: Int): MyList = new Cons(element, Empty)
+  def add[B >: Nothing](element: B): MyList[B] = new Cons(element, Empty)
 
   def printElements: String = ""
 }
 
-class Cons(h: Int, t: MyList) extends MyList {
-  def head: Int = h
+class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
+  def head: A = h
 
-  def tail: MyList = t
+  def tail: MyList[A] = t
 
   def isEmpty: Boolean = false
 
-  def add(element: Int): MyList = new Cons(element, this)
+  def add[B >: A](element: B): MyList[B] = new Cons(element, this)
 
   def printElements: String = {
     if (t.isEmpty) s"$h"
