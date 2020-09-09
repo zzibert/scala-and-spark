@@ -20,4 +20,8 @@ object AnonymousClasses extends App {
   val jim = new Person("Jim") {
     override def sayHi: Unit = println(s"hi my name is jim, how can i help")
   }
+
+  // 1. generic trait MyPredicate[T] test[T]() => boolean
+  // 2. Generic trait MyTransformer[A, B]
+  // 3. Mylist map(MyTransformer) => myList, filter(predicate) => mylist, flatmap(transformer A =)
 }
