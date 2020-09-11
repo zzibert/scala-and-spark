@@ -62,7 +62,7 @@ abstract class MyList[+A] {
 
 }
 
-object Empty extends MyList[Nothing] {
+case object Empty extends MyList[Nothing] {
 
   def head: Nothing = throw new NoSuchElementException
 
@@ -70,7 +70,7 @@ object Empty extends MyList[Nothing] {
 
   def isEmpty: Boolean = true
 
-  def add[B >: Nothing](element: B): MyList[B] = new Cons(element, Empty)
+  def add[B >: Nothing](element: B): MyList[B] = Cons(element, Empty)
 
   def printElements: String = ""
 
@@ -83,14 +83,14 @@ object Empty extends MyList[Nothing] {
   def flatMap[B](transformer: MyTransformer[Nothing, MyList[B]]): MyList[B] = Empty
 }
 
-class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
+case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
   def head: A = h
 
   def tail: MyList[A] = t
 
   def isEmpty: Boolean = false
 
-  def add[B >: A](element: B): MyList[B] = new Cons(element, this)
+  def add[B >: A](element: B): MyList[B] = Cons(element, this)
 
   def printElements: String = {
     if (t.isEmpty) s"$h"
@@ -98,15 +98,15 @@ class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
   }
 
   def map[B](transformer: MyTransformer[A, B]): MyList[B] = {
-    new Cons(transformer.transform(h), t.map(transformer))
+    Cons(transformer.transform(h), t.map(transformer))
   }
 
   def filter(predicate: MyPredicate[A]): MyList[A] = {
-    if (predicate.test(h)) new Cons(h, t.filter(predicate))
+    if (predicate.test(h)) Cons(h, t.filter(predicate))
     else t.filter(predicate)
   }
 
-  def ++[B >: A](secondList: MyList[B]): MyList[B] = new Cons(h, t ++ secondList)
+  def ++[B >: A](secondList: MyList[B]): MyList[B] = Cons(h, t ++ secondList)
 
 
   def flatMap[B](transformer: MyTransformer[A, MyList[B]]): MyList[B] = {
