@@ -1,5 +1,9 @@
 package playgroud
 
 object ScalaPlayground extends App {
-  println("Hello Scala!")
+
+  class Cinderella {}
+
+
+  class PrinceCharming {}
 }
