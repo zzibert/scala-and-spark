@@ -7,17 +7,17 @@ object Exercise extends App {
 
   println(listOfIntegers)
 
-  val doubler: (Int => Int) = new Function1[Int, Int] {
-    override def apply(element: Int): Int = element * 2
+  val doubler: (Int => Int) =  {
+    element => element * 2
   }
 
 
-  val isOdd: (Int => Boolean) = new Function1[Int, Boolean] {
-    override def apply(element: Int) = element % 2 == 1
+  val isOdd: (Int => Boolean) =  {
+    element => element % 2 == 1
   }
 
-  val nAndNPlus: (Int => MyList[Int]) = new Function1[Int, MyList[Int]] {
-    override def apply(element: Int) = new Cons[Int](element, new Cons[Int](element+1, Empty))
+  val nAndNPlus: (Int => MyList[Int]) = {
+    element => new Cons[Int](element, new Cons[Int](element+1, Empty))
   }
 
   println(listOfIntegers.map(doubler))

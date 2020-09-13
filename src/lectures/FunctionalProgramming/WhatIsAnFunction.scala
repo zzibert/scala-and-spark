@@ -37,12 +37,7 @@ object WhatIsAnFunction extends App {
   // 3. define a function which takes an int and returns another function which takes an int and returns an int
   // - whats the type of this function
   // - how to do it
-
-  val Hof: (Int => (Int => Int)) = new (Int => (Int => Int)) {
-    override def apply(v1: Int): (Int => Int) = new (Int => Int) {
-      override def apply(v2: Int): Int = v1 + v2
-    }
-  }
+  val Hof = (x: Int) => (y: Int) => x+y
 
   val multByFive = Hof(3)
   val multByFour = Hof(4)
@@ -52,6 +47,7 @@ object WhatIsAnFunction extends App {
   println(multByFour(10))
   println(multByTen(10))
   println(Hof(10)(10)) // currying
+  println(Hof(3)(4))
 
 }
 
