@@ -20,17 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90920be2-05ac-47d5-8d50-f1edc6c7c7cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lectures/FunctionalProgramming/AnonymousFunctions.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/FunctionalProgramming/HOFsAndCurries.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Exercise$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Exercise$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Exercise$$anon$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Exercise$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Exercise$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/FunctionalProgramming/WhatIsAnFunction$$anon$5$$anon$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/FunctionalProgramming/WhatIsAnFunction$$anon$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/FunctionalProgramming/WhatIsAnFunction$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/FunctionalProgramming/WhatIsAnFunction$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercises/MyList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyList.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/FunctionalProgramming/WhatIsAnFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/FunctionalProgramming/WhatIsAnFunction.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +57,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.WhatIsAnFunction">
+  <component name="RunManager" selected="Application.HOFsAndCurries">
     <configuration name="AnonymousFunctions" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.FunctionalProgramming.AnonymousFunctions" />
       <module name="scala-and-spark" />
@@ -80,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exceptions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.OOP.Exceptions" />
+    <configuration name="Exercise" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="exercises.Exercise" />
       <module name="scala-and-spark" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.OOP.*" />
+          <option name="PATTERN" value="exercises.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exercise" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="exercises.Exercise" />
+    <configuration name="HOFsAndCurries" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.FunctionalProgramming.HOFsAndCurries" />
       <module name="scala-and-spark" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercises.*" />
+          <option name="PATTERN" value="lectures.FunctionalProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HOFsAndCurries" />
         <item itemvalue="Application.WhatIsAnFunction" />
         <item itemvalue="Application.Exercise" />
         <item itemvalue="Application.AnonymousFunctions" />
         <item itemvalue="Application.PackigingAndImports" />
-        <item itemvalue="Application.Exceptions" />
       </list>
     </recent_temporary>
   </component>
@@ -174,49 +165,49 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="488" y="318" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599838833745" />
-    <state width="1385" height="144" key="GridCell.Tab.0.bottom" timestamp="1599994691128">
+    <state width="1385" height="144" key="GridCell.Tab.0.bottom" timestamp="1600003434302">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599994691128" />
+    <state width="1385" height="144" key="GridCell.Tab.0.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600003434302" />
     <state width="1385" height="199" key="GridCell.Tab.0.bottom/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685786" />
     <state width="1385" height="199" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462647" />
-    <state width="1385" height="144" key="GridCell.Tab.0.center" timestamp="1599994691127">
+    <state width="1385" height="144" key="GridCell.Tab.0.center" timestamp="1600003434302">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599994691127" />
+    <state width="1385" height="144" key="GridCell.Tab.0.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600003434302" />
     <state width="1385" height="199" key="GridCell.Tab.0.center/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685785" />
     <state width="1385" height="199" key="GridCell.Tab.0.center/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462646" />
-    <state width="1385" height="144" key="GridCell.Tab.0.left" timestamp="1599994691127">
+    <state width="1385" height="144" key="GridCell.Tab.0.left" timestamp="1600003434301">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599994691127" />
+    <state width="1385" height="144" key="GridCell.Tab.0.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600003434301" />
     <state width="1385" height="199" key="GridCell.Tab.0.left/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685785" />
     <state width="1385" height="199" key="GridCell.Tab.0.left/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462645" />
-    <state width="1385" height="144" key="GridCell.Tab.0.right" timestamp="1599994691127">
+    <state width="1385" height="144" key="GridCell.Tab.0.right" timestamp="1600003434302">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599994691127" />
+    <state width="1385" height="144" key="GridCell.Tab.0.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600003434302" />
     <state width="1385" height="199" key="GridCell.Tab.0.right/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685786" />
     <state width="1385" height="199" key="GridCell.Tab.0.right/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462646" />
-    <state width="1385" height="249" key="GridCell.Tab.1.bottom" timestamp="1599859664878">
+    <state width="1385" height="249" key="GridCell.Tab.1.bottom" timestamp="1599999575643">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="249" key="GridCell.Tab.1.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599859664878" />
+    <state width="1385" height="249" key="GridCell.Tab.1.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599999575643" />
     <state width="1385" height="249" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555237" />
-    <state width="1385" height="249" key="GridCell.Tab.1.center" timestamp="1599859664877">
+    <state width="1385" height="249" key="GridCell.Tab.1.center" timestamp="1599999575642">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="249" key="GridCell.Tab.1.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599859664877" />
+    <state width="1385" height="249" key="GridCell.Tab.1.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599999575642" />
     <state width="1385" height="249" key="GridCell.Tab.1.center/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555236" />
-    <state width="1385" height="249" key="GridCell.Tab.1.left" timestamp="1599859664877">
+    <state width="1385" height="249" key="GridCell.Tab.1.left" timestamp="1599999575642">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="249" key="GridCell.Tab.1.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599859664877" />
+    <state width="1385" height="249" key="GridCell.Tab.1.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599999575642" />
     <state width="1385" height="249" key="GridCell.Tab.1.left/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555236" />
-    <state width="1385" height="249" key="GridCell.Tab.1.right" timestamp="1599859664877">
+    <state width="1385" height="249" key="GridCell.Tab.1.right" timestamp="1599999575642">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="249" key="GridCell.Tab.1.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599859664877" />
+    <state width="1385" height="249" key="GridCell.Tab.1.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599999575642" />
     <state width="1385" height="249" key="GridCell.Tab.1.right/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555236" />
     <state x="206" y="23" key="SettingsEditor" timestamp="1599403929191">
       <screen x="0" y="23" width="1440" height="797" />
