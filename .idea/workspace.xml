@@ -20,20 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90920be2-05ac-47d5-8d50-f1edc6c7c7cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lectures/OOP/PackigingAndImports.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lectures/OOP/package.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lectures/FunctionalProgramming/WhatIsAnFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$MathCalculationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$MathCalculationException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$MyException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$MyException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$OverFlowException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$OverFlowException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$PocketCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$PocketCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$UnderFlowException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions$UnderFlowException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/Exceptions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/playgroud/ScalaPlayground$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/playgroud/ScalaPlayground$.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/playgroud/ScalaPlayground$delayedInit$body.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Cons$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Cons$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Cons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Cons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Double$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Double.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Empty$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Empty$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Empty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Empty.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Exercise$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Exercise$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Exercise.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/Exercise.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/IsOdd$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/IsOdd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/MyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/MyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/MyPredicate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/MyTransformer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/NAndNPlus$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/exercises/NAndNPlus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/PackigingAndImports$.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/PackigingAndImports$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/PackigingAndImports$delayedInit$body.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/PackigingAndImports$delayedInit$body.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/PackigingAndImports.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/lectures/OOP/PackigingAndImports.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/playgroud/ScalaPlayground$Cinderella.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/playgroud/ScalaPlayground$Cinderella.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/scala-and-spark/playgroud/ScalaPlayground.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/scala-and-spark/playgroud/ScalaPlayground.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playgroud/ScalaPlayground.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/playgroud/ScalaPlayground.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercises/MyList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercises/MyList.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,20 +78,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.PackigingAndImports">
-    <configuration name="AnonymousClasses" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.OOP.AnonymousClasses" />
-      <module name="scala-and-spark" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.OOP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WhatIsAnFunction">
     <configuration name="CaseClasses" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.OOP.CaseClasses" />
       <module name="scala-and-spark" />
@@ -135,13 +131,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WhatIsAnFunction" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.FunctionalProgramming.WhatIsAnFunction" />
+      <module name="scala-and-spark" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.FunctionalProgramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WhatIsAnFunction" />
+        <item itemvalue="Application.Exercise" />
         <item itemvalue="Application.PackigingAndImports" />
         <item itemvalue="Application.Exceptions" />
-        <item itemvalue="Application.Exercise" />
         <item itemvalue="Application.CaseClasses" />
-        <item itemvalue="Application.AnonymousClasses" />
       </list>
     </recent_temporary>
   </component>
@@ -177,45 +186,49 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="488" y="318" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599838833745" />
-    <state width="1385" height="144" key="GridCell.Tab.0.bottom" timestamp="1599838728392">
+    <state width="1385" height="144" key="GridCell.Tab.0.bottom" timestamp="1599993273137">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599838728392" />
+    <state width="1385" height="144" key="GridCell.Tab.0.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599993273137" />
     <state width="1385" height="199" key="GridCell.Tab.0.bottom/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685786" />
     <state width="1385" height="199" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462647" />
-    <state width="1385" height="144" key="GridCell.Tab.0.center" timestamp="1599838728391">
+    <state width="1385" height="144" key="GridCell.Tab.0.center" timestamp="1599993273136">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599838728391" />
+    <state width="1385" height="144" key="GridCell.Tab.0.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599993273136" />
     <state width="1385" height="199" key="GridCell.Tab.0.center/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685785" />
     <state width="1385" height="199" key="GridCell.Tab.0.center/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462646" />
-    <state width="1385" height="144" key="GridCell.Tab.0.left" timestamp="1599838728391">
+    <state width="1385" height="144" key="GridCell.Tab.0.left" timestamp="1599993273136">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599838728391" />
+    <state width="1385" height="144" key="GridCell.Tab.0.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599993273136" />
     <state width="1385" height="199" key="GridCell.Tab.0.left/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685785" />
     <state width="1385" height="199" key="GridCell.Tab.0.left/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462645" />
-    <state width="1385" height="144" key="GridCell.Tab.0.right" timestamp="1599838728392">
+    <state width="1385" height="144" key="GridCell.Tab.0.right" timestamp="1599993273137">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599838728392" />
+    <state width="1385" height="144" key="GridCell.Tab.0.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599993273137" />
     <state width="1385" height="199" key="GridCell.Tab.0.right/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685786" />
     <state width="1385" height="199" key="GridCell.Tab.0.right/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462646" />
-    <state width="1385" height="249" key="GridCell.Tab.1.bottom" timestamp="1599511555237">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1385" height="249" key="GridCell.Tab.1.bottom" timestamp="1599859664878">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state width="1385" height="249" key="GridCell.Tab.1.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599859664878" />
     <state width="1385" height="249" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555237" />
-    <state width="1385" height="249" key="GridCell.Tab.1.center" timestamp="1599511555236">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1385" height="249" key="GridCell.Tab.1.center" timestamp="1599859664877">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state width="1385" height="249" key="GridCell.Tab.1.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599859664877" />
     <state width="1385" height="249" key="GridCell.Tab.1.center/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555236" />
-    <state width="1385" height="249" key="GridCell.Tab.1.left" timestamp="1599511555236">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1385" height="249" key="GridCell.Tab.1.left" timestamp="1599859664877">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state width="1385" height="249" key="GridCell.Tab.1.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599859664877" />
     <state width="1385" height="249" key="GridCell.Tab.1.left/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555236" />
-    <state width="1385" height="249" key="GridCell.Tab.1.right" timestamp="1599511555236">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="1385" height="249" key="GridCell.Tab.1.right" timestamp="1599859664877">
+      <screen x="0" y="23" width="1440" height="797" />
     </state>
+    <state width="1385" height="249" key="GridCell.Tab.1.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599859664877" />
     <state width="1385" height="249" key="GridCell.Tab.1.right/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555236" />
     <state x="206" y="23" key="SettingsEditor" timestamp="1599403929191">
       <screen x="0" y="23" width="1440" height="797" />
@@ -225,5 +238,9 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="471" y="279" width="540" height="524" key="StructurePopup/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599584454107" />
+    <state x="383" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1599984141830">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="383" y="144" width="670" height="676" key="search.everywhere.popup/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599984141830" />
   </component>
 </project>

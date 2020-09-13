@@ -7,43 +7,34 @@ object Exercise extends App {
 
   println(listOfIntegers)
 
-  println(listOfIntegers.map(Double))
+  val doubler: (Int => Int) = new Function1[Int, Int] {
+    override def apply(element: Int): Int = element * 2
+  }
 
-  println(listOfIntegers.filter(IsOdd))
 
-  println(listOfIntegers.map(NAndNPlus))
+  val isOdd: (Int => Boolean) = new Function1[Int, Boolean] {
+    override def apply(element: Int) = element % 2 == 1
+  }
 
-  println(listOfIntegers.flatMap(NAndNPlus))
+  val nAndNPlus: (Int => MyList[Int]) = new Function1[Int, MyList[Int]] {
+    override def apply(element: Int) = new Cons[Int](element, new Cons[Int](element+1, Empty))
+  }
+
+  println(listOfIntegers.map(doubler))
+
+  println(listOfIntegers.filter(isOdd))
+
+  println(listOfIntegers.map(nAndNPlus))
+
+  println(listOfIntegers.flatMap(nAndNPlus))
 
   var anotherList = new Cons[Int](4, listOfIntegers)
 
   var thirdList = new Cons[Int](1, new Cons[Int](2, new Cons[Int](3, Empty)))
 
-  println(thirdList.flatMap(NAndNPlus))
+  println(thirdList.flatMap(nAndNPlus))
 
 
-}
-
-trait MyPredicate[-T] {
-  def test(element: T): Boolean
-}
-
-object IsOdd extends MyPredicate[Int] {
-  def test(element: Int): Boolean = {
-    element % 2 == 1
-  }
-}
-
-trait MyTransformer[-A, B] {
-  def transform(element: A): B
-}
-
-object Double extends MyTransformer[Int, Int] {
-  def transform(element: Int): Int = element * 2
-}
-
-object NAndNPlus extends MyTransformer[Int, MyList[Int]] {
-  def transform(element: Int) = new Cons[Int](element, new Cons[Int](element+1, Empty))
 }
 
 abstract class MyList[+A] {
@@ -55,10 +46,11 @@ abstract class MyList[+A] {
   def printElements: String
   override def toString: String = "[" + printElements + "]"
 
-  def map[B](transformer: MyTransformer[A, B]): MyList[B]
-  def filter(predicate: MyPredicate[A]): MyList[A]
+  // Higer order functions
+  def map[B](transformer: A => B): MyList[B]
+  def filter(predicate: A => Boolean): MyList[A]
   def ++[B >: A](secondList: MyList[B]): MyList[B]
-  def flatMap[B](transformer: MyTransformer[A, MyList[B]]): MyList[B]
+  def flatMap[B](transformer: A => MyList[B]): MyList[B]
 
 }
 
@@ -74,13 +66,13 @@ case object Empty extends MyList[Nothing] {
 
   def printElements: String = ""
 
-  def map[B](transformer: MyTransformer[Nothing, B]): MyList[B] = Empty
+  def map[B](transformer: Nothing => B): MyList[B] = Empty
 
-  def filter(predicate: MyPredicate[Nothing]): MyList[Nothing] = Empty
+  def filter(predicate: Nothing => Boolean): MyList[Nothing] = Empty
 
   def ++[B >: Nothing](secondList: MyList[B]): MyList[B] = secondList
 
-  def flatMap[B](transformer: MyTransformer[Nothing, MyList[B]]): MyList[B] = Empty
+  def flatMap[B](transformer: Nothing => MyList[B]): MyList[B] = Empty
 }
 
 case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
@@ -97,20 +89,20 @@ case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
     else h + " " + t.printElements
   }
 
-  def map[B](transformer: MyTransformer[A, B]): MyList[B] = {
-    Cons(transformer.transform(h), t.map(transformer))
+  def map[B](transformer: A => B): MyList[B] = {
+    Cons(transformer(h), t.map(transformer))
   }
 
-  def filter(predicate: MyPredicate[A]): MyList[A] = {
-    if (predicate.test(h)) Cons(h, t.filter(predicate))
+  def filter(predicate: A => Boolean): MyList[A] = {
+    if (predicate(h)) Cons(h, t.filter(predicate))
     else t.filter(predicate)
   }
 
   def ++[B >: A](secondList: MyList[B]): MyList[B] = Cons(h, t ++ secondList)
 
 
-  def flatMap[B](transformer: MyTransformer[A, MyList[B]]): MyList[B] = {
-    transformer.transform(h) ++ t.flatMap(transformer)
+  def flatMap[B](transformer: A => MyList[B]): MyList[B] = {
+    transformer(h) ++ t.flatMap(transformer)
   }
 }
 
