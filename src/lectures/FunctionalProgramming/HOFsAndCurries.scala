@@ -48,5 +48,10 @@ object HOFsAndCurries extends App {
   println(standardFormat(math.Pi))
   println(preciseFormat(math.Pi))
 
+  // 2. toCurry(f: (Int, Int) => Int) => (Int => Int => Int)
+//  val toCurry:(f: (Int, Int) => Int)) =  (Int => Int => Int) = {
+//
+//  }
+
 
 }

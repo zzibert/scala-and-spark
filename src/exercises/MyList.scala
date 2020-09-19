@@ -2,8 +2,8 @@ package exercises
 
 object Exercise extends App {
 
-  var listOfIntegers: MyList[Int] = new Cons(1, new Cons(2, Empty))
-  listOfIntegers = listOfIntegers.add(3)
+  var listOfIntegers: MyList[Int] = new Cons(2, new Cons(3, Empty))
+  listOfIntegers = listOfIntegers.add(1)
 
   println(listOfIntegers)
 
@@ -30,10 +30,18 @@ object Exercise extends App {
 
   var anotherList = new Cons[Int](4, listOfIntegers)
 
-  var thirdList = new Cons[Int](1, new Cons[Int](2, new Cons[Int](3, Empty)))
+  var thirdList = anotherList.copy()
 
   println(thirdList.flatMap(nAndNPlus))
 
+  val print: (Int => Unit) = x => println(x)
+
+  thirdList.map(doubler).forEach(print)
+
+  val zipper = (x: Int, y: Int) => x * y
+
+
+  println(listOfIntegers.fold(0)((x: Int, y: Int) => x + y))
 
 }
 
@@ -51,6 +59,8 @@ abstract class MyList[+A] {
   def filter(predicate: A => Boolean): MyList[A]
   def ++[B >: A](secondList: MyList[B]): MyList[B]
   def flatMap[B](transformer: A => MyList[B]): MyList[B]
+  def forEach(transformer: A => Unit): Unit
+  def fold[B >: A](start: B)(func: (A, B) => B): B
 
 }
 
@@ -73,6 +83,10 @@ case object Empty extends MyList[Nothing] {
   def ++[B >: Nothing](secondList: MyList[B]): MyList[B] = secondList
 
   def flatMap[B](transformer: Nothing => MyList[B]): MyList[B] = Empty
+
+  def forEach(transformer: Nothing => Unit): Unit = Empty
+
+  def fold[B >: Nothing](start: B)(func: (Nothing, B) => B): B = start
 }
 
 case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
@@ -104,6 +118,16 @@ case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
   def flatMap[B](transformer: A => MyList[B]): MyList[B] = {
     transformer(h) ++ t.flatMap(transformer)
   }
+
+  def forEach(transformer: A => Unit): Unit = {
+    transformer(h)
+    t.forEach(transformer)
+  }
+
+  def fold[B >: A](start: B)(func: (A, B) => B): B = {
+    t.fold(func(h, start))(func)
+  }
+
 }
 
 
