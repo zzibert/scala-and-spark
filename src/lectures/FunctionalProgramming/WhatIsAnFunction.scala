@@ -36,10 +36,18 @@ object WhatIsAnFunction extends App {
     }
   }
 
+  val specialFunction: (Int => (Int => Int)) = { (x: Int) =>
+    (y: Int) => x + y
+  }
+
   val multiplyFive = multiplyNumber(5)
 
   println(multiplyFive(11))
   println(multiplyNumber(15)(10)) // curried function
+
+  val addFive = specialFunction(5)
+  println(addFive(10))
+  println(specialFunction(10)(20))
 }
 
 trait MyFunction[A, B] {
