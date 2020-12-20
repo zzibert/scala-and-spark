@@ -2,56 +2,46 @@ package lectures.FunctionalProgramming
 
 object WhatIsAnFunction extends App {
 
-  // use finctions as first class elements
-  // problem: oop
-
+  // use functions as first class elements
   val doubler = new MyFunction[Int, Int] {
     override def apply(element: Int): Int = element * 2
   }
 
   println(doubler(2))
 
-  // function types = Function1[A, B]
-  val stringToIntCoverter = new Function1[String, Int] {
+  val stringToIntConverter = new Function[String, Int] {
     override def apply(string: String): Int = string.toInt
   }
 
-  println(stringToIntCoverter("9") + 1)
+  println(stringToIntConverter("3") + 4)
 
   val adder: ((Int, Int) => Int) = new Function2[Int, Int, Int] {
-    override def apply(v1: Int, v2: Int): Int = v1 + v2
+    override def apply(a: Int, b: Int): Int = a + b
   }
 
-  // Function types Function2[A, B, R] === (A, B) => R
-  // ALL SCALA FUNCTIONS ARE OBJECTS OR INSTANCES OF CLASSES
+  // 1. takes 2 strings and concatenates them
 
-  // 1. a function which takes 2 strings and concatenates them
-  val concatenate: ((String, String) => String) = new Function2[String, String, String] {
-    override def apply(v1: String, v2: String): String = v1 + v2
+  val concat: (String, String) => String = new Function2[String, String, String] {
+    override def apply(a: String, b: String): String = a + " " + b
   }
 
-  println(concatenate("Hello", "Scala"))
+  println(concat("hello", "world"))
+  // 2. transform myPredicate and MyTransformer into function Types
+  // 3. Define a function which takes an argument int and retuns another function which takes int and returns int
+  // - define the type of the function
 
-  // 2. Transform myPredicate and MyTransformer into function types.
+  val multiplyNumber: (Int => (Int => Int)) = new Function[Int, Function1[Int, Int]] {
+    override def apply(x: Int): Function1[Int, Int] = new Function[Int, Int] {
+      override def apply(y: Int): Int = x * y
+    }
+  }
 
-  // 3. define a function which takes an int and returns another function which takes an int and returns an int
-  // - whats the type of this function
-  // - how to do it
-  val Hof = (x: Int) => (y: Int) => x+y
+  val multiplyFive = multiplyNumber(5)
 
-  val multByFive = Hof(3)
-  val multByFour = Hof(4)
-  val multByTen = Hof(10)
-
-  println(multByFive(4))
-  println(multByFour(10))
-  println(multByTen(10))
-  println(Hof(10)(10)) // currying
-  println(Hof(3)(4))
-
+  println(multiplyFive(11))
+  println(multiplyNumber(15)(10)) // curried function
 }
 
 trait MyFunction[A, B] {
   def apply(element: A): B
 }
-

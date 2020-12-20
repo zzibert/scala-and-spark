@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90920be2-05ac-47d5-8d50-f1edc6c7c7cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ATourOfScala/GenericClasses.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ATourOfScala/Variances.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/FunctionalProgramming/WhatIsAnFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/FunctionalProgramming/WhatIsAnFunction.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +58,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.GenericClasses">
+  <component name="RunManager" selected="Application.WhatIsAnFunction">
     <configuration name="ExtractorObjects" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="ATourOfScala.ExtractorObjects" />
       <module name="scala-and-spark" />
@@ -96,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegularExpressionPatterns" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ATourOfScala.RegularExpressionPatterns" />
+    <configuration name="Variances" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="ATourOfScala.Variances" />
       <module name="scala-and-spark" />
       <extension name="coverage">
         <pattern>
@@ -109,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingletonObjects" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ATourOfScala.SingletonObjects" />
+    <configuration name="WhatIsAnFunction" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.FunctionalProgramming.WhatIsAnFunction" />
       <module name="scala-and-spark" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ATourOfScala.*" />
+          <option name="PATTERN" value="lectures.FunctionalProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WhatIsAnFunction" />
+        <item itemvalue="Application.Variances" />
         <item itemvalue="Application.GenericClasses" />
         <item itemvalue="Application.ForComprehensions" />
         <item itemvalue="Application.ExtractorObjects" />
-        <item itemvalue="Application.RegularExpressionPatterns" />
-        <item itemvalue="Application.SingletonObjects" />
       </list>
     </recent_temporary>
   </component>
@@ -160,66 +162,46 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="531" y="117" key="#com.intellij.ide.util.MemberChooser/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600007014244" />
-    <state x="444" y="118" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599403748158">
-      <screen x="0" y="23" width="1440" height="798" />
-    </state>
-    <state x="444" y="118" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599403748158" />
     <state x="488" y="318" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599838833745">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="488" y="318" width="460" height="205" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599838833745" />
-    <state width="1385" height="144" key="GridCell.Tab.0.bottom" timestamp="1600534006751">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state width="1878" height="144" key="GridCell.Tab.0.bottom" timestamp="1608477987664">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600534006751" />
-    <state width="1385" height="199" key="GridCell.Tab.0.bottom/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685786" />
-    <state width="1385" height="199" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462647" />
-    <state width="1385" height="144" key="GridCell.Tab.0.center" timestamp="1600534006750">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state width="1878" height="144" key="GridCell.Tab.0.bottom/0.23.1440.797/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1608477987664" />
+    <state width="1385" height="144" key="GridCell.Tab.0.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1608477093735" />
+    <state width="1878" height="144" key="GridCell.Tab.0.center" timestamp="1608477987663">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600534006750" />
-    <state width="1385" height="199" key="GridCell.Tab.0.center/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685785" />
-    <state width="1385" height="199" key="GridCell.Tab.0.center/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462646" />
-    <state width="1385" height="144" key="GridCell.Tab.0.left" timestamp="1600534006750">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state width="1878" height="144" key="GridCell.Tab.0.center/0.23.1440.797/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1608477987663" />
+    <state width="1385" height="144" key="GridCell.Tab.0.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1608477093734" />
+    <state width="1878" height="144" key="GridCell.Tab.0.left" timestamp="1608477987662">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600534006750" />
-    <state width="1385" height="199" key="GridCell.Tab.0.left/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685785" />
-    <state width="1385" height="199" key="GridCell.Tab.0.left/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462645" />
-    <state width="1385" height="144" key="GridCell.Tab.0.right" timestamp="1600534006751">
-      <screen x="0" y="23" width="1440" height="797" />
+    <state width="1878" height="144" key="GridCell.Tab.0.left/0.23.1440.797/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1608477987662" />
+    <state width="1385" height="144" key="GridCell.Tab.0.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1608477093734" />
+    <state width="1878" height="144" key="GridCell.Tab.0.right" timestamp="1608477987663">
+      <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
-    <state width="1385" height="144" key="GridCell.Tab.0.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600534006751" />
-    <state width="1385" height="199" key="GridCell.Tab.0.right/0.23.1440.798/-1920.23.1920.1057@0.23.1440.798" timestamp="1599427685786" />
-    <state width="1385" height="199" key="GridCell.Tab.0.right/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599667462646" />
+    <state width="1878" height="144" key="GridCell.Tab.0.right/0.23.1440.797/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1608477987663" />
+    <state width="1385" height="144" key="GridCell.Tab.0.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1608477093734" />
     <state width="1385" height="249" key="GridCell.Tab.1.bottom" timestamp="1600008385920">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1385" height="249" key="GridCell.Tab.1.bottom/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600008385920" />
-    <state width="1385" height="249" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555237" />
     <state width="1385" height="249" key="GridCell.Tab.1.center" timestamp="1600008385919">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1385" height="249" key="GridCell.Tab.1.center/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600008385919" />
-    <state width="1385" height="249" key="GridCell.Tab.1.center/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555236" />
     <state width="1385" height="249" key="GridCell.Tab.1.left" timestamp="1600008385919">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1385" height="249" key="GridCell.Tab.1.left/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600008385919" />
-    <state width="1385" height="249" key="GridCell.Tab.1.left/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555236" />
     <state width="1385" height="249" key="GridCell.Tab.1.right" timestamp="1600008385920">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state width="1385" height="249" key="GridCell.Tab.1.right/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1600008385920" />
-    <state width="1385" height="249" key="GridCell.Tab.1.right/0.23.1440.877/-1920.23.1920.977@0.23.1440.877" timestamp="1599511555236" />
-    <state x="206" y="23" key="SettingsEditor" timestamp="1599403929191">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state x="206" y="23" key="SettingsEditor/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599403929191" />
-    <state x="471" y="279" width="540" height="524" key="StructurePopup" timestamp="1599584454107">
-      <screen x="0" y="23" width="1440" height="797" />
-    </state>
-    <state x="471" y="279" width="540" height="524" key="StructurePopup/0.23.1440.797/-1920.23.1920.1057@0.23.1440.797" timestamp="1599584454107" />
     <state x="383" y="144" width="670" height="676" key="search.everywhere.popup" timestamp="1599984141830">
       <screen x="0" y="23" width="1440" height="797" />
     </state>
