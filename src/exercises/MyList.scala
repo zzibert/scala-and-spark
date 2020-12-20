@@ -36,12 +36,17 @@ object Exercise extends App {
 
   val print: (Int => Unit) = x => println(x)
 
-  thirdList.map(doubler).forEach(print)
+  println(thirdList)
 
-  val zipper = (x: Int, y: Int) => x * y
+  val reversedThirdList = thirdList.sort((x, y) => x - y)
 
+  val listOfString = new Cons("one", new Cons("two", new Cons("three", new Cons("four", Empty))))
 
-  println(listOfIntegers.fold(0)((x: Int, y: Int) => x + y))
+  println(reversedThirdList.zipWith(thirdList, (x: Int, y: Int) => x * y))
+
+  println(thirdList.zipWith(listOfString, (x: Int, word: String) => x + " " + word))
+
+  println(thirdList.fold(0)(_ + _))
 
 }
 
@@ -60,6 +65,8 @@ abstract class MyList[+A] {
   def ++[B >: A](secondList: MyList[B]): MyList[B]
   def flatMap[B](transformer: A => MyList[B]): MyList[B]
   def forEach(transformer: A => Unit): Unit
+  def sort(compare: (A, A) => Int): MyList[A]
+  def zipWith[B, C](secondList: MyList[B], adder: (A, B) => C): MyList[C]
   def fold[B >: A](start: B)(func: (A, B) => B): B
 
 }
@@ -84,7 +91,11 @@ case object Empty extends MyList[Nothing] {
 
   def flatMap[B](transformer: Nothing => MyList[B]): MyList[B] = Empty
 
-  def forEach(transformer: Nothing => Unit): Unit = Empty
+  def forEach(transformer: Nothing => Unit): Unit = ()
+
+  def sort(compare: (Nothing, Nothing) => Int) = Empty
+
+  def zipWith[B, C](secondList: MyList[B], adder: (Nothing, B) => C): MyList[C] = Empty
 
   def fold[B >: Nothing](start: B)(func: (Nothing, B) => B): B = start
 }
@@ -122,6 +133,20 @@ case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
   def forEach(transformer: A => Unit): Unit = {
     transformer(h)
     t.forEach(transformer)
+  }
+
+  def sort(compare: (A, A) => Int): MyList[A] = {
+    def insert(x: A, sortedList: MyList[A]): MyList[A] =
+      if (sortedList.isEmpty) new Cons(x, Empty)
+      else if (compare(x, sortedList.head) <= 0)  new Cons(x, sortedList)
+      else new Cons(sortedList.head, insert(x, sortedList.tail))
+
+    val sortedTail = t.sort(compare)
+    insert(h, sortedTail)
+  }
+
+  def zipWith[B, C](secondList: MyList[B], zip: (A, B) => C): MyList[C] = {
+    new Cons[C](zip(h, secondList.head), t.zipWith(secondList.tail, zip))
   }
 
   def fold[B >: A](start: B)(func: (A, B) => B): B = {
