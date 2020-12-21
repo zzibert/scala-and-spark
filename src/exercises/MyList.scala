@@ -46,7 +46,11 @@ object Exercise extends App {
 
   println(thirdList.zipWith(listOfString, (x: Int, word: String) => x + " " + word))
 
-  println(thirdList.fold(0)(_ + _))
+  val nodeList = for {
+    node <- thirdList
+  } yield node
+
+  println(nodeList)
 
 }
 
@@ -64,7 +68,7 @@ abstract class MyList[+A] {
   def filter(predicate: A => Boolean): MyList[A]
   def ++[B >: A](secondList: MyList[B]): MyList[B]
   def flatMap[B](transformer: A => MyList[B]): MyList[B]
-  def forEach(transformer: A => Unit): Unit
+  def foreach(transformer: A => Unit): Unit
   def sort(compare: (A, A) => Int): MyList[A]
   def zipWith[B, C](secondList: MyList[B], adder: (A, B) => C): MyList[C]
   def fold[B >: A](start: B)(func: (A, B) => B): B
@@ -91,7 +95,7 @@ case object Empty extends MyList[Nothing] {
 
   def flatMap[B](transformer: Nothing => MyList[B]): MyList[B] = Empty
 
-  def forEach(transformer: Nothing => Unit): Unit = ()
+  def foreach(transformer: Nothing => Unit): Unit = ()
 
   def sort(compare: (Nothing, Nothing) => Int) = Empty
 
@@ -130,9 +134,9 @@ case class Cons[+A](h: A, t: MyList[A]) extends MyList[A] {
     transformer(h) ++ t.flatMap(transformer)
   }
 
-  def forEach(transformer: A => Unit): Unit = {
+  def foreach(transformer: A => Unit): Unit = {
     transformer(h)
-    t.forEach(transformer)
+    t.foreach(transformer)
   }
 
   def sort(compare: (A, A) => Int): MyList[A] = {
