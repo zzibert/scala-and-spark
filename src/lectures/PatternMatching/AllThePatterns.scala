@@ -51,14 +51,13 @@ object AllThePatterns extends App {
     case List(1, _, _, _) => // extractor
     case List(1, _*) => // list of arbitrary length
     case 1 :: List(_) => // infix pattern
-    case List(1, 2, 3) += 42 => // infix pattern
+    case List(1, 2, 3) :+ 42 => // infix pattern
   }
 
   // 6 - type specifiers
   val unknown: Any = 2
   val unknownMatch = unknown match {
     case list: List[Int] => // explicit type specifier
-    case _:
   }
 
   // 7 - name binding
@@ -74,6 +73,6 @@ object AllThePatterns extends App {
 
   // 9 - if guards
   val secondElementSpecial = aList match {
-    case Cons(_, Cons(specialElement, _)) if specialElement % 2 == 0 => 
+    case Cons(_, Cons(specialElement, _)) if specialElement % 2 == 0 =>
   }
 }
