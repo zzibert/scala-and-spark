@@ -52,7 +52,7 @@ object CurriesAndPAF extends App {
   // EXERCISES
   // 1. Process a list of number and return their string representations with different formats
   // use the %4.2f, %8.6f and %14.12f with curried formatter function.
-  
+
   def curriedFormatter(s: String)(number: Double): String = s.format(number)
   // 2. difference between
   // functions vs methods
