@@ -1,5 +1,9 @@
 package lectures.part3Concurrency
 
+import scala.collection.mutable
+import scala.collection.mutable.ArrayBuffer
+import scala.util.Random
+
 object ThreadCommunication extends App {
   /*
   * the producer-consumer problem
@@ -7,13 +11,12 @@ object ThreadCommunication extends App {
   * */
 
   class SimpleContainer {
-    private var value: Int = 0
+    private var queue = ArrayBuffer[Int]()
 
-    def isEmpty: Boolean = value == 0
-    def set(newValue: Int): Unit = value = newValue
+    def isEmpty: Boolean = queue.size == 0
+    def set(newValue: Int): Unit = queue += newValue
     def get: Int = {
-      val result = value
-      value = 0
+      val result = queue.remove(0)
       result
     }
   }
@@ -44,33 +47,57 @@ object ThreadCommunication extends App {
 //  naiveProdCons()
 
   // wait and notify
-  def smartProdCons(): Unit = {
-    val container = new SimpleContainer
+  def prodConsLargeBuffer(): Unit = {
+    val buffer: mutable.Queue[Int] = new mutable.Queue[Int]
+    val capacity = 3
 
     val consumer = new Thread(() => {
-      println("[consumer] waiting ...")
-      container.synchronized {
-        container.wait()
+      val random = new Random()
+
+      while(true) {
+        buffer.synchronized {
+          if (buffer.isEmpty) {
+            println("[consumer] buffer empty, waiting...")
+            buffer.wait()
+          } else {
+            val value = buffer.dequeue()
+            println("[consumer] im consuming " + value)
+            buffer.notify()
+          }
+        }
+        Thread.sleep(random.nextInt(5000))
+
       }
 
-      // container must have some value
-      println("[consumer] I have consumed " + container.get)
     })
-
     val producer = new Thread(() => {
-      println("[producer] Hard at Work")
-      Thread.sleep(2000)
-      val value = 42
+      var value = 1
+      val random = new Random(
 
-      container.synchronized {
-        println("[producer] Im producing " + value)
-        container.set(value)
-        container.notify()
+      )
+      while(true) {
+        buffer.synchronized {
+          if (buffer.size == capacity) {
+            println("[producer] buffer is currently full, waiting...")
+            buffer.wait()
+          } else {
+            value += 1
+            println("[producer] producing value: " + value)
+            buffer.addOne(value)
+            buffer.notify()
+          }
+        }
+        Thread.sleep(random.nextInt(500))
       }
+
     })
+
     producer.start()
     consumer.start()
   }
 
-  smartProdCons()
+  prodConsLargeBuffer()
+  /*
+  * producer -> [? ? ? ] -> consumer
+  * */
 }
