@@ -18,10 +18,7 @@ object StreamsPlayground extends App {
     new ConsStream(first, fibonacci(second, first + second))
   }
 
-  def eratosthenes(numbers: MyStream[Int]): MyStream[Int] = {
-    if (numbers.isEmpty) numbers
-    else new Cons(numbers.head, eratosthenes(numbers.tail.filter(_ % numbers.head != 0)))
-  }
+  def eratosthenes(numbers: MyStream[Int]): MyStream[Int] = ???
 
   println(fibonacci(1, 1).take(100).toList())
   // 1, 1, 2, 3, 5, 8, 13, 21, 35
