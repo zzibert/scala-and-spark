@@ -42,5 +42,38 @@ object Monads extends App {
   * def flatten(m: Monad[Monad[T]]): Monad[T] = ???
   * */
 
+  class Compute[+A](value: =>  A)  {
+
+    lazy val a = value
+
+    def flatMap[B](f: (=> A) => Compute[B]): Compute[B] = {
+      f(a)
+    }
+
+    def use: A = a
+
+    def map[B](f: A => B): Compute[B] = flatMap(value => Compute(f(value)))
+  }
+
+  object Compute {
+    def apply[A](a: => A): Compute[A] = new Compute(a)
+    def flatten[A](m: Compute[Compute[A]]): Compute[A] = m.flatMap(value => value)
+  }
+
+  val lazyInstance = Compute {
+    println("dfdfkdkfdfdfd")
+    42
+  }
+
+  val flatMappedInstance = lazyInstance.flatMap(x => Compute {
+    10 * x
+  })
+
+  val flatMappedInstance2 = lazyInstance.flatMap(x => Compute {
+    10 * x
+  })
+
+  flatMappedInstance.use
+  flatMappedInstance2.use
 
 }
