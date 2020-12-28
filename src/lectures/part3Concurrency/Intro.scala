@@ -27,24 +27,109 @@ object Intro extends App {
 
   // executors
   val pool = Executors.newFixedThreadPool(10)
-  pool.execute(() => println("something in the thread pool"))
 
-  pool.execute(() => {
-    Thread.sleep(1000)
-    println("done after 1 second")
+  def runInParallel: Int = {
+    var x = 0
+
+    val thread1 = new Thread(new Runnable {
+      override def run(): Unit = x = 1
+    })
+
+    val thread2 = new Thread(new Runnable {
+      override def run(): Unit = x = 2
+    })
+
+    thread1.start()
+    thread2.start()
+
+    x
+  }
+
+//  println(for (_ <- 1 to 100) yield runInParallel) // race condition
+
+  class BankAccount(@volatile var amount: Int) {
+    override def toString: String = "" + amount
+  }
+
+  def buy(account: BankAccount, thing: String, price: Int) = {
+    account.amount -= price
+//    println("I bought " + thing)
+//    println("Account is now " + account)
+  }
+
+//  for (_ <- 1 to 10000) {
+//    val account = new BankAccount(50000)
+//    val thread1 = new Thread(new Runnable {
+//      override def run(): Unit = buySafe(account, "shoes", 3000)
+//    })
+//    val thread2 = new Thread(new Runnable {
+//      override def run(): Unit = buySafe(account, "iphone12", 4000)
+//    })
+//    thread1.start()
+//    thread2.start()
+//    Thread.sleep(10)
+//    if (account.amount != 43000) println("AHA1" + account.amount)
+//    println()
+//  }
+
+  // option #1 : use synchronized()
+  def buySafe(account: BankAccount, thing: String, price: Int) = {
+    account.synchronized {
+      // no two threads can evaluate this at the same time
+      account.amount -= price
+      println("i bought " + thing)
+      println("i have  " + account.amount)
+    }
+  }
+
+  // option #2 : use @volatile
+
+  /*
+  * construct  50 "inception" threads thread1 -> thread2 -> thread3
+  * println(hello from thread #3)
+  * IN REVERSE ORDER
+  * simple recursive function start and join methods
+  * */
+
+  def inception(number: Int): Thread = new Thread(() => {
+    if (number <= 50) {
+      val newThread = inception(number+1)
+      newThread.start()
+      newThread.join()
+    }
+    println("Hello from thread number #" + number)
+
   })
 
-  pool.execute(() => {
+  inception(1).start()
+
+  var x = 0
+  val threads = (1 to 100).map(_ => new Thread(() => x += 1))
+  threads.foreach(_.start())
+
+  println(x)
+
+  // What is the biggest value possible for x 100
+  // what is the smallest value possible for x 1
+
+  /*
+  * sleep fallacy
+  * */
+
+  var message = ""
+  val awesomeThread = new Thread(() => {
     Thread.sleep(1000)
-    println("almost done")
-    Thread.sleep(1000)
-    println("done after two seconds")
+    message = "Scala is awesome"
   })
 
-  pool.shutdown()
+  message = "Scala blows"
+  awesomeThread.start()
+  Thread.sleep(2000)
+  println(message)
+  // what is the value of the message awesome most of the time
+  // is it guaranteed no
+  // why why not depends on the distribution of time on different threads
 
-  println(pool.isShutdown)
-//  pool.execute(() => println("should not appear")) // throws an exception in the calling thread
 
-//  pool.shutdownNow()
+
 }
