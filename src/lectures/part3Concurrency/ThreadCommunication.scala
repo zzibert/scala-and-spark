@@ -137,8 +137,8 @@ object ThreadCommunication extends App {
 
   val producers = (1 to 5).map(new Producer(_, buffer, capacity)).toList
 
-  producers.foreach(_.start())
-  consumers.foreach(_.start())
+//  producers.foreach(_.start())
+//  consumers.foreach(_.start())
 
 //  prodConsLargeBuffer()
   /*
@@ -149,6 +149,78 @@ object ThreadCommunication extends App {
   * producer1 -> [? ? ?] -> consumer1
   * producer2 -> same buffer -> consumer2
   * */
+
+  /*
+  * Exercise notifyAll
+  * create a deadlock
+  * create a livelock
+  * */
+  def testNotifyAll(): Unit = {
+    val bell = new Object
+
+    (1 to 10).foreach(i => new Thread(() => {
+      bell.synchronized {
+        println(s"[Thread $i] waiting ...")
+        bell.wait()
+        println(s"[Thread $i]  hooray!")
+      }
+    }).start())
+
+    new Thread(() => {
+      Thread.sleep(2000)
+      println("[announcer] Rockn n Roll")
+      bell.synchronized {
+        bell.notify()
+      }
+    }).start()
+
+  }
+
+//  testNotifyAll()
+
+  // 2 - DEADLOCK
+  case class Friend(name: String) {
+    def bow(other: Friend) = {
+      this.synchronized {
+        println(s"$this: I am bowing to my friend $other")
+        other.rise(this)
+        println(s"$this: my friend $other has risen")
+      }
+    }
+    def rise(other: Friend): Unit = {
+      this.synchronized {
+        println(s"$this: I am rising to my friend $other")
+        other.rise(this)
+        println(s"$this: I am rising to my friend $other")
+      }
+    }
+    var side = "right"
+
+    def switchSide(): Unit = {
+      if (side == "right") side = "left"
+      else side = "right"
+    }
+
+    def pass(other: Friend): Unit = {
+      while (this.side == other.side) {
+        println(s"$this: oh, but please, $other, feel free to pass ...")
+        switchSide()
+        Thread.sleep(1000)
+      }
+    }
+  }
+
+  val sam = Friend("Sam")
+  val pierre = Friend("Pierre")
+
+//  new Thread(() => sam.bow(pierre)).start()
+//  new Thread(() => pierre.bow(sam)).start()
+
+  // livelock
+
+  new Thread(() => sam.pass(pierre)).start()
+  new Thread(() => pierre.pass(sam)).start()
+
 
 
 }
