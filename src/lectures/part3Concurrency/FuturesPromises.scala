@@ -2,7 +2,7 @@ package lectures.part3Concurrency
 
 import scala.concurrent.{Await, Future, Promise}
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.util.{Failure, Random, Success}
+import scala.util.{Failure, Random, Success, Try}
 import scala.concurrent.duration._
 
 object FuturesPromises extends App {
@@ -143,9 +143,74 @@ object FuturesPromises extends App {
     Thread.sleep(1000)
     promise.success(42)
     println("[producer] done")
-  }).start()
+  })
 
-  Thread.sleep(1500)
+  /*
+  * 1. fulfill a future Immediately with a value
+  * 2. inSequence(fa, fb) runs fb after it makes sure that fa completed
+  * 3. first(fa, fb) => which ever finished first value
+  * 4. last(fa, fb) => new future with the last value
+  * 5. retryUntil[T](action: () => Future[T], condition: T => Boolean): Future[T]
+  * */
 
+  def fullfiledFuture(number: Int, duration: Int) = Future {
+    Thread.sleep(duration)
+    number
+  }
+
+  def inSequence(fa: Future[Int], fb: Future[Int]): Future[Int] = {
+    fa.flatMap(a => fb)
+  }
+
+  def first[A](fa: Future[A], fb: Future[A]): Future[A] = {
+    val p = Promise[A]
+
+    Seq(fa, fb).foreach {future =>
+      future onComplete {
+        case Success(result) => p.trySuccess(result)
+      }
+    }
+
+    p.future
+  }
+
+  def last[A](fa: Future[A], fb: Future[A]): Future[A] = {
+    val first = Promise[A]
+    val second = Promise[A]
+
+    val checkAndComplete = (result: Try[A]) =>
+      if(!first.tryComplete(result))
+        second.complete(result)
+
+    fa.onComplete(checkAndComplete)
+    fb.onComplete(checkAndComplete)
+
+    second.future
+  }
+
+  // retryUntil: return the first value that satisfies the condition, retry action until
+  // run the action, check if the condition is met , if not retry
+  def retryUntil[T](action: () => Future[T], condition: T => Boolean): Future[T] = {
+    action()
+      .filter(condition)
+      .recoverWith {
+        case _ => retryUntil(action, condition)
+      }
+  }
+
+   var counter = 0
+
+  val random = new Random()
+  val action = () => Future {
+    Thread.sleep(5)
+    val nextValue = random.nextInt(10000)
+    println(s"counter $counter generated " + nextValue)
+    counter += 1
+    nextValue
+  }
+
+  retryUntil[Int](action, _ > 9998).foreach(println)
+
+  Thread.sleep(50000)
 
 }
