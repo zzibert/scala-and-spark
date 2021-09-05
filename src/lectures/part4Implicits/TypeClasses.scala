@@ -34,13 +34,9 @@ object TypeClasses extends App {
     def serialize(value: T): String
   }
 
-  object UserSerializer extends HTMLSerializer[User] {
-    override def serialize(value: User): String = s"<div>${value.name} (${value.age} yo) <a href=${value.email}/> </div>"
-  }
+//  val john = User("John", 32, "john@rockthejvm.com")
 
-  val john = User("John", 32, "john@rockthejvm.com")
-
-  println(UserSerializer.serialize(john))
+//  println(UserSerializer.serialize(john))
   // 1 - we can define serializers for other types
 
   import java.util.Date
@@ -60,18 +56,68 @@ object TypeClasses extends App {
 
   }
 
+  object MyTypeClassTemplate {
+    def apply[T](implicit instance: MyTypeClassTemplate[T]) = instance
+  }
+
   /*
   * Equality type class
   * */
   trait Equal[T]  {
     def equal(a: T, b: T): Boolean
   }
+//
+//  object CompareUsersByName extends Equal[User] {
+//    override def equal(a: User, b: User): Boolean = a.name == b.name
+//  }
+//
+//  object CompareUsersByNameAndEmail extends Equal[User] {
+//    override def equal(a: User, b: User): Boolean = (a.name == b.name) && (a.email == b.email)
+//  }
 
-  object CompareUsersByName extends Equal[User] {
+  // PART 2
+
+  object HTMLSerializer {
+    def serialize[T](value: T)(implicit serializer: HTMLSerializer[T]): String = serializer.serialize(value)
+
+    def apply[T](implicit serializer: HTMLSerializer[T]) = serializer
+  }
+
+  implicit object IntSerializer extends HTMLSerializer[Int] {
+    override def serialize(value: Int): String = s"<div style: color=blue>$value</div>"
+  }
+
+  implicit object UserSerializer extends HTMLSerializer[User] {
+    override def serialize(value: User): String = s"<div>${value.name} (${value.age} yo) <a href=${value.email}/> </div>"
+  }
+
+  println(HTMLSerializer.serialize(15))
+
+  val john = User("John", 60, "john@john.com")
+
+  val anotherJohn = User("John", 45, "john2@john.com")
+
+  println(HTMLSerializer.serialize(john))
+
+  // access to the entire type class interface
+  println(HTMLSerializer[User].serialize(john))
+
+  // EXERCISE
+  // implement the TC pattern for the equality trait
+
+  object Equal {
+    def apply[T](a: T, b: T)(implicit equalizer: Equal[T]): Boolean = equalizer.equal(a, b)
+  }
+
+   object CompareUsersByName extends Equal[User] {
     override def equal(a: User, b: User): Boolean = a.name == b.name
   }
 
-  object CompareUsersByNameAndEmail extends Equal[User] {
+  implicit object CompareUsersByNameAndEmail extends Equal[User] {
     override def equal(a: User, b: User): Boolean = (a.name == b.name) && (a.email == b.email)
   }
+
+  // AD-HOC POLYMORPHISM
+
+  println(Equal(john, anotherJohn))
 }
